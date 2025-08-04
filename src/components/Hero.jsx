@@ -7,7 +7,7 @@ import reactImg from "../assets/react.svg"
 const Hero = () => {
   return(
     <section className="min-h-screen flex items-center px-6 lg:px-12">
-      <div className="max-w-5xl mx-auto w-full">
+      <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="mb-6">
