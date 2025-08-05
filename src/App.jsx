@@ -2,6 +2,7 @@ import './App.css'
 import About from './components/About'
 import Hero from './components/Hero'
 import Mobilenav from './components/MobileNav'
+import Projects from './components/Projects'
 import Sidebar from './components/Sidebar'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <div className="lg:ml-20">
         <Hero/>
         <About/>
+        <Projects/>
       </div>
     </div>
   )
