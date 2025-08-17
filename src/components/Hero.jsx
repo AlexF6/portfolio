@@ -2,11 +2,12 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
 import reactImg from "../assets/react.svg"
+import { Linkedin } from "lucide-react";
 
 
 const Hero = () => {
   return(
-    <section className="min-h-screen flex items-center px-6 lg:px-12">
+    <section id="home" className="min-h-screen flex items-center px-6 lg:px-12">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -26,12 +27,12 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-violet-600 hover:bg-purple-700 transition-all duration-300">
-                View my work
+                Contact Me
                 <ArrowUpRight/>
               </Button>
-              <Button className="bg-violet-600 hover:bg-purple-700 transition-all duration-300" size="lg">
-                <Download/>
-                Download CV
+              <Button className="flex items-center bg-violet-600 hover:bg-purple-700 transition-all duration-300" size="lg">
+                <Linkedin/>
+                Linkedin
               </Button>
             </div>
 

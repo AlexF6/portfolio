@@ -1,34 +1,158 @@
-import { Card } from "./ui/card";
-import rsvg from "../assets/react.svg"
+import { Card, CardContent, CardTitle, CardDescription } from "./ui/card";
+import rsvg from "../assets/react.svg";
+import { Badge } from "./ui/badge";
+import { ArrowUpRight, Github } from "lucide-react";
+import { Button } from "./ui/button";
+import proy1 from "../assets/proy1.webp"
+import proy2 from "../assets/proy2.webp"
 
 const Projects = () => {
-  return(
+  return (
     <section id="projects" className="py-20 px-6 lg:px-12 bg-gray-850">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4 text-violet-400">
             Featured Projects
           </h2>
-          <p>
-            A showcase of my recent work and creative solutions
-          </p>
+          <p>A showcase of my recent work and creative solutions</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Card
-            className="bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300"
-          >
+          <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300">
             <div className="relative overflow-hidden">
-              <img src={rsvg} className="h-[200px] w-full object-cover group-hover:scale-105 transition-transform duration-300" alt="" />
-
+              <img
+                src={proy1 || "/placeholder.svg"} // If you want a fallback in /public
+                alt="react"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute top-4 left-4">
+                <Badge className="bg-violet-600 text-white">Web app</Badge>
+              </div>
+              <div className="absolute top-4 right-4">
+                <span className="text-xs text-gray-300 bg-gray-900/80 px-2 py-1 rounded">
+                  2025
+                </span>
+              </div>
             </div>
+
+            <CardContent className="p-6">
+              <CardTitle className="text-xl mb-3">E-Commerce</CardTitle>
+              <CardDescription className="text-gray-300 mb-4">
+                An e-commerce
+              </CardDescription>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <Badge variant="outline" className="border-gray-600 text-gray-300">
+                  React
+                </Badge>
+              </div>
+
+              <div className="flex space-x-4">
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
+                  <Github className="h-4 w-4 mr-2" />
+                  Code
+                </Button>
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
+                  <ArrowUpRight className="h-4 w-4 mr-2" />
+                  Live Demo
+                </Button>
+              </div>
+            </CardContent>
           </Card>
 
-        </div>
+          <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300">
+            <div className="relative overflow-hidden">
+              <img
+                src={proy2 || "/placeholder.svg"} // If you want a fallback in /public
+                alt="react"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute top-4 left-4">
+                <Badge className="bg-violet-600 text-white">Web app</Badge>
+              </div>
+              <div className="absolute top-4 right-4">
+                <span className="text-xs text-gray-300 bg-gray-900/80 px-2 py-1 rounded">
+                  2025
+                </span>
+              </div>
+            </div>
 
+            <CardContent className="p-6">
+              <CardTitle className="text-gray-200 text-xl mb-3">E-Commerce</CardTitle>
+              <CardDescription className="text-gray-300 mb-4">
+                An e-commerce
+              </CardDescription>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <Badge variant="outline" className="border-gray-600 text-gray-300">
+                  React
+                </Badge>
+              </div>
+
+              <div className="flex space-x-4 text-gray-200">
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
+                  <Github className="h-4 w-4 mr-2" />
+                  Code
+                </Button>
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
+                  <ArrowUpRight className="h-4 w-4 mr-2" />
+                  Live Demo
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300">
+            <div className="relative overflow-hidden">
+              <img
+                src={rsvg || "/placeholder.svg"} // If you want a fallback in /public
+                alt="react"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <div className="absolute top-4 left-4">
+                <Badge className="bg-violet-600 text-white">Web app</Badge>
+              </div>
+              <div className="absolute top-4 right-4">
+                <span className="text-xs text-gray-300 bg-gray-900/80 px-2 py-1 rounded">
+                  2025
+                </span>
+              </div>
+            </div>
+
+            <CardContent className="p-6">
+              <CardTitle className="text-xl mb-3">E-Commerce</CardTitle>
+              <CardDescription className="text-gray-300 mb-4">
+                An e-commerce
+              </CardDescription>
+
+              <div className="flex flex-wrap gap-2 mb-6">
+                <Badge variant="outline" className="border-gray-600 text-gray-300">
+                  React
+                </Badge>
+              </div>
+
+              <div className="flex space-x-4">
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
+                  <Github className="h-4 w-4 mr-2" />
+                  Code
+                </Button>
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
+                  <ArrowUpRight className="h-4 w-4 mr-2" />
+                  Live Demo
+                </Button>
+              </div>
+            </CardContent>
+          </Card> */}
+        </div>
       </div>
     </section>
   );
-}
+};
 
 export default Projects;
