@@ -18,7 +18,7 @@ const Projects = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300">
+          <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300 ">
             <div className="relative overflow-hidden">
               <img
                 src={proy1 || "/placeholder.svg"} // If you want a fallback in /public
@@ -27,6 +27,8 @@ const Projects = () => {
                 height={400}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-0 transition-opacity duration-500"></div>
+              
               <div className="absolute top-4 left-4">
                 <Badge className="bg-violet-600 text-white">Web app</Badge>
               </div>
@@ -71,6 +73,8 @@ const Projects = () => {
                 height={400}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-0 transition-opacity duration-500"></div>
+              
               <div className="absolute top-4 left-4">
                 <Badge className="bg-violet-600 text-white">Web app</Badge>
               </div>
