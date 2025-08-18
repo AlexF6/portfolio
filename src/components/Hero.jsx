@@ -27,11 +27,11 @@ const Hero = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-violet-600 hover:bg-purple-700 transition-all duration-300">
-                Contact Me
+                Contact me
                 <ArrowUpRight/>
               </Button>
               <Button className="flex items-center bg-violet-600 hover:bg-purple-700 transition-all duration-300" size="lg">
-                <Linkedin/>
+                <Linkedin className="w-25"/>
                 Linkedin
               </Button>
             </div>

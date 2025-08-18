@@ -19,7 +19,7 @@ const Projects = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300 ">
-            <div className="relative overflow-hidden">
+            <div className="relative overflow-hidden rounded-2xl">
               <img
                 src={proy1 || "/placeholder.svg"} // If you want a fallback in /public
                 alt="react"
@@ -52,20 +52,26 @@ const Projects = () => {
               </div>
 
               <div className="flex space-x-4">
-                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
-                  <Github className="h-4 w-4 mr-2" />
-                  Code
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
+                  <a className="flex items-center" href="https://github.com/AlexF6/nana-responsive-front" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4 mr-2" />
+                    Code
+                  </a>
                 </Button>
-                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
-                  <ArrowUpRight className="h-4 w-4 mr-2" />
-                  Live Demo
-                </Button>
+                  <a className="flex items-center" href="https://nana-responsive-front.onrender.com" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
+                      <ArrowUpRight className="h-4 w-4 mr-2" />
+                      Live Demo
+                    </Button>
+                  </a>
+
               </div>
             </CardContent>
           </Card>
 
           <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300">
-            <div className="relative overflow-hidden">
+
+            <div className="relative overflow-hidden rounded-2xl">
               <img
                 src={proy2 || "/placeholder.svg"} // If you want a fallback in /public
                 alt="react"
@@ -98,14 +104,18 @@ const Projects = () => {
               </div>
 
               <div className="flex space-x-4 text-gray-200">
-                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
-                  <Github className="h-4 w-4 mr-2" />
-                  Code
+                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
+                  <a className="flex items-center" href="https://github.com/AlexF6/paint-ref" target="_blank" rel="noopener noreferrer">
+                    <Github className="h-4 w-4 mr-2" />
+                    Code
+                  </a>
                 </Button>
-                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-700 bg-transparent">
-                  <ArrowUpRight className="h-4 w-4 mr-2" />
-                  Live Demo
-                </Button>
+                <a className="flex items-center" href="https://paint-nsr8.onrender.com" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
+                    <ArrowUpRight className="h-4 w-4 mr-2" />
+                    Live Demo
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>
