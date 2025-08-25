@@ -49,7 +49,7 @@ const Hero = () => {
 
         </div>
       </div>
-
+{/* Farming git activity */}
     </section>
   );
 }
