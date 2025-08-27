@@ -1,5 +1,6 @@
 import './App.css'
 import About from './components/About'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Mobilenav from './components/MobileNav'
 import Projects from './components/Projects'
@@ -15,6 +16,7 @@ function App() {
           <Hero />
         <About />
         <Projects />
+        <Footer/>
       </div>
     </div>
   )

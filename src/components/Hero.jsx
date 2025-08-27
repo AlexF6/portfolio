@@ -27,18 +27,23 @@ const Hero = () => {
               I specialize in creating web applications with clean, efficient and modern code
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="flex items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300">
+            <a href="mailto:correo@correo.com">
+              <Button
+                size="lg"
+                className="flex cursor-pointer items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300"
+              >
                 <MailIcon className="w-[15px]" />
-                <p>
-                  Contact me
-                </p>
+                <p>Contact me</p>
               </Button>
+            </a>
 
-              <Button size="lg" className="flex items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300">
+              <Button size="lg" className="flex cursor-pointer items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300">
                 <img src={linkedin} className="w-[15px]" alt="" />
-                <p>
-                  LinkedIn
-                </p>
+                <a href="https://co.linkedin.com/in/alexsander-gonz%C3%A1lez-farrayans-149a18267?trk=people-guest_people_search-card">
+                  <p>
+                    LinkedIn
+                  </p>
+                </a>
               </Button>
             </div>
 

@@ -3,6 +3,13 @@ import rsvg from "../assets/react.svg";
 import { Badge } from "./ui/badge";
 import { ArrowUpRight, Github } from "lucide-react";
 import { Button } from "./ui/button";
+import tailwind from "../assets/tailwind.svg"
+import react from "../assets/react.svg"
+import rails from "../assets/rails.svg"
+
+
+import proy from "../assets/elysium.webp"
+import drawing from "../assets/drawing.webp"
 import proy1 from "../assets/proy1.webp"
 import proy2 from "../assets/proy2.webp"
 
@@ -21,11 +28,18 @@ const Projects = () => {
           <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300 ">
             <div className="relative overflow-hidden rounded-2xl">
               <img
-                src={proy1 || "/placeholder.svg"} // If you want a fallback in /public
+                src={proy || "/placeholder.svg"} // If you want a fallback in /public
                 alt="react"
                 width={600}
                 height={400}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="https://pr-store.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir proyecto Paint en Render"
+                className="absolute inset-0 z-10"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-0 transition-opacity duration-500"></div>
               
@@ -47,20 +61,29 @@ const Projects = () => {
 
               <div className="flex flex-wrap gap-2 mb-6">
                 <Badge variant="outline" className="border-gray-600 text-gray-300">
-                  React
+                  <p className="text-red-200">
+                    Ruby on Rails
+                  </p>
+                  <img src={rails} className="w-3" alt="" />
+                </Badge>
+                <Badge variant="outline" className="border-gray-600 text-gray-300">
+                  <p className=" text-blue-300">
+                  Tailwind
+                  </p>
+                  <img src={tailwind} className="w-3.5" alt="" />
                 </Badge>
               </div>
 
               <div className="flex space-x-4">
                 <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
-                  <a className="flex items-center" href="https://github.com/AlexF6/nana-responsive-front" target="_blank" rel="noopener noreferrer">
+                  <a className="flex items-center" href="https://github.com/AlexF6/pr-store" target="_blank" rel="noopener noreferrer">
                     <Github className="h-4 w-4 mr-2" />
                     Code
                   </a>
                 </Button>
-                  <a className="flex items-center" href="https://nana-responsive-front.onrender.com" target="_blank" rel="noopener noreferrer">
+                  <a className="flex items-center" href="https://pr-store.onrender.com" target="_blank" rel="noopener noreferrer">
                     <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
-                      <ArrowUpRight className="h-4 w-4 mr-2" />
+                      <ArrowUpRight className="h-4 w-4 mr-1" />
                       Live Demo
                     </Button>
                   </a>
@@ -78,6 +101,13 @@ const Projects = () => {
                 width={600}
                 height={400}
                 className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+              <a
+                href="https://paint-nsr8.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Abrir proyecto Paint en Render"
+                className="absolute inset-0 z-10"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-0 transition-opacity duration-500"></div>
               
@@ -99,7 +129,16 @@ const Projects = () => {
 
               <div className="flex flex-wrap gap-2 mb-6">
                 <Badge variant="outline" className="border-gray-600 text-gray-300">
-                  React
+                  <p className="text-purple-200">
+                    React
+                  </p>
+                  <img src={react} className="w-3" alt="" />
+                </Badge>
+                <Badge variant="outline" className="border-gray-600 text-gray-300">
+                  <p className=" text-blue-300">
+                  Tailwind
+                  </p>
+                  <img src={tailwind} className="w-3.5" alt="" />
                 </Badge>
               </div>
 
@@ -112,7 +151,7 @@ const Projects = () => {
                 </Button>
                 <a className="flex items-center" href="https://paint-nsr8.onrender.com" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
-                    <ArrowUpRight className="h-4 w-4 mr-2" />
+                    <ArrowUpRight className="h-4 w-4 mr-1" />
                     Live Demo
                   </Button>
                 </a>
