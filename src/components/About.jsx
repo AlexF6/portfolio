@@ -15,6 +15,7 @@ import vsIcon from "../assets/vscode.svg"
 import npmIcon from "../assets/npm.svg"
 import typeScriptIcon from "../assets/typescript.svg"
 import python from "../assets/python.svg"
+import angular from "../assets/angular.svg"
 
 
 import { Briefcase } from "lucide-react";
@@ -87,11 +88,12 @@ const About = () => {
                 </h3>  
                 <div className="flex items-center justify-center gap-5 mt-5">
                   <img src={railsIcon} className="w-11 h-11" alt="" />
-                  <img src={nodeIcon} className="w-11 h-11" alt="" />
+                  {/* <img src={nodeIcon} className="w-11 h-11" alt="" /> */}
                   <img src={mysqlIcon} className="w-11 h-11" alt="" />
+                  <img src={postgreIcon} className="w-11 h-11" alt="" />
+
                 </div>             
                 <div className="flex items-center justify-center gap-5 mt-5">
-                  <img src={postgreIcon} className="w-11 h-11" alt="" />
                 </div>
 
               </div>
@@ -102,7 +104,7 @@ const About = () => {
                 </h3>
                 <div className="flex items-center justify-center gap-5 mt-5">
                   <img src={dockerIcon} className="w-11 h-11" alt="" />
-                  <img src={astroIcon} className="w-11 h-11" alt="" />
+                  <img src={angular} className="w-11 h-11" alt="" />
                   <img src={python} className="w-11 h-11" alt="" />
 
                 </div>

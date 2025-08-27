@@ -2,7 +2,8 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Download } from "lucide-react";
 import reactImg from "../assets/react.svg"
-import { Linkedin } from "lucide-react";
+import linkedin from "../assets/linkedin.svg"
+import { MailIcon } from "lucide-react";
 
 
 const Hero = () => {
@@ -26,13 +27,18 @@ const Hero = () => {
               I specialize in creating web applications with clean, efficient and modern code
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-violet-600 hover:bg-purple-700 transition-all duration-300">
-                Contact me
-                <ArrowUpRight/>
+              <Button size="lg" className="flex items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300">
+                <MailIcon className="w-[15px]" />
+                <p>
+                  Contact me
+                </p>
               </Button>
-              <Button className="flex items-center bg-violet-600 hover:bg-purple-700 transition-all duration-300" size="lg">
-                <Linkedin className="w-25"/>
-                Linkedin
+
+              <Button size="lg" className="flex items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300">
+                <img src={linkedin} className="w-[15px]" alt="" />
+                <p>
+                  LinkedIn
+                </p>
               </Button>
             </div>
 
