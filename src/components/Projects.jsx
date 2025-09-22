@@ -25,14 +25,14 @@ const Projects = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300 ">
+          <Card className="text-gray-200 bg-black/25 border-gray-900 overflow-hidden group hover:border-violet-500 transition-all duration-300 px-4 rounded-3xl">
             <div className="relative overflow-hidden rounded-2xl">
               <img
                 src={proy || "/placeholder.svg"} // If you want a fallback in /public
                 alt="react"
                 width={600}
                 height={400}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300 border-2 border-gray-800"
               />
               <a
                 href="https://pr-store.onrender.com/"
@@ -54,45 +54,62 @@ const Projects = () => {
             </div>
 
             <CardContent className="p-6">
-              <CardTitle className="text-xl mb-3">E-Commerce</CardTitle>
-              <CardDescription className="text-gray-300 mb-4">
-                An e-commerce
-              </CardDescription>
+            <CardTitle className="text-xl mb-3">E-Commerce</CardTitle>
+            <CardDescription className="text-gray-300 mb-4">
+              A full-stack e-commerce application built with Ruby on Rails, featuring 
+              native authentication, product management, and a responsive UI styled with Tailwind CSS.
+            </CardDescription>
 
-              <div className="flex flex-wrap gap-2 mb-6">
-                <Badge variant="outline" className="border-gray-600 text-gray-300">
-                  <p className="text-red-200">
-                    Ruby on Rails
-                  </p>
-                  <img src={rails} className="w-3" alt="" />
-                </Badge>
-                <Badge variant="outline" className="border-gray-600 text-gray-300">
-                  <p className=" text-blue-300">
-                  Tailwind
-                  </p>
-                  <img src={tailwind} className="w-3.5" alt="" />
-                </Badge>
-              </div>
+            <div className="flex flex-wrap gap-2 mb-6">
+              <Badge variant="outline" className="border-gray-600 text-gray-300">
+                <p className="text-red-200">Ruby on Rails</p>
+                <img src={rails} className="w-3" alt="Ruby on Rails" />
+              </Badge>
+              <Badge variant="outline" className="border-gray-600 text-gray-300">
+                <p className="text-blue-300">Tailwind</p>
+                <img src={tailwind} className="w-3.5" alt="Tailwind CSS" />
+              </Badge>
+              <Badge variant="outline" className="border-gray-600 text-gray-300">
+                <p className="text-gray-200">Authentication</p>
+              </Badge>
+            </div>
 
-              <div className="flex space-x-4">
-                <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
-                  <a className="flex items-center" href="https://github.com/AlexF6/pr-store" target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4 mr-2" />
-                    Code
-                  </a>
+            <div className="flex space-x-4">
+              <Button
+                variant="outline"
+                size="sm"
+                className="border-gray-600 hover:bg-gray-400 bg-transparent"
+              >
+                <a
+                  className="flex items-center"
+                  href="https://github.com/AlexF6/pr-store"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github className="h-4 w-4 mr-2" />
+                  Code
+                </a>
+              </Button>
+              <a
+                className="flex items-center"
+                href="https://pr-store.onrender.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="border-gray-600 hover:bg-gray-400 bg-transparent"
+                >
+                  <ArrowUpRight className="h-4 w-4 mr-1" />
+                  Live Demo
                 </Button>
-                  <a className="flex items-center" href="https://pr-store.onrender.com" target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="border-gray-600 hover:bg-gray-400 bg-transparent">
-                      <ArrowUpRight className="h-4 w-4 mr-1" />
-                      Live Demo
-                    </Button>
-                  </a>
-
-              </div>
-            </CardContent>
+              </a>
+            </div>
+          </CardContent>
           </Card>
 
-          <Card className="text-gray-200 bg-gray-800 border-gray-700 overflow-hidden group hover:border-violet-500 transition-all duration-300">
+          <Card className="text-gray-200 bg-black/25 border-gray-900 overflow-hidden group hover:border-violet-500 transition-all duration-300 px-4 rounded-3xl">
 
             <div className="relative overflow-hidden rounded-2xl">
               <img
@@ -100,7 +117,7 @@ const Projects = () => {
                 alt="react"
                 width={600}
                 height={400}
-                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300 border-2 border-white/90"
               />
               <a
                 href="https://paint-nsr8.onrender.com"
@@ -109,7 +126,7 @@ const Projects = () => {
                 aria-label="Abrir proyecto Paint en Render"
                 className="absolute inset-0 z-10"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent group-hover:opacity-0 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-black/60 to-transparent group-hover:opacity-0 transition-opacity duration-500"></div>
               
               <div className="absolute top-4 left-4">
                 <Badge className="bg-violet-600 text-white">Web app</Badge>
@@ -122,23 +139,23 @@ const Projects = () => {
             </div>
 
             <CardContent className="p-6">
-              <CardTitle className="text-gray-200 text-xl mb-3">E-Commerce</CardTitle>
+              <CardTitle className="text-gray-200 text-xl mb-3">Paint Clone</CardTitle>
               <CardDescription className="text-gray-300 mb-4">
-                An e-commerce
+                A simple paint-style application built with React, Canvas API, and shadcn/ui components. 
+                Users can draw, erase, and experiment with colors directly on the canvas.
               </CardDescription>
 
               <div className="flex flex-wrap gap-2 mb-6">
                 <Badge variant="outline" className="border-gray-600 text-gray-300">
-                  <p className="text-purple-200">
-                    React
-                  </p>
+                  <p className="text-purple-200">React</p>
                   <img src={react} className="w-3" alt="" />
                 </Badge>
                 <Badge variant="outline" className="border-gray-600 text-gray-300">
-                  <p className=" text-blue-300">
-                  Tailwind
-                  </p>
+                  <p className="text-blue-300">Tailwind</p>
                   <img src={tailwind} className="w-3.5" alt="" />
+                </Badge>
+                <Badge variant="outline" className="border-gray-600 text-gray-300">
+                  <p className="text-gray-300">shadcn/ui</p>
                 </Badge>
               </div>
 
