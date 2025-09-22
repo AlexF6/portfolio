@@ -4,6 +4,9 @@ import { Download } from "lucide-react";
 import reactImg from "../assets/react.svg"
 import linkedin from "../assets/linkedin.svg"
 import { MailIcon } from "lucide-react";
+import blob from "../assets/blob.svg"
+import photo from "../assets/photo2.png"
+
 
 
 const Hero = () => {
@@ -49,13 +52,19 @@ const Hero = () => {
 
           </div>
 
-          <div className="relative">
-            <div className="realtive z-10">
-              <img src={reactImg} className="w-[300px] h-[400px]  "></img>
+          <div className="relative w-[400px] h-[500px]">
+            {/* Contenedor con el fondo y la foto recortada */}
+            <div className="absolute inset-0 bg-[#1D172F] rounded-2xl transform rotate-3 overflow-hidden z-10">
+              <img
+                src={photo}
+                alt="photo"
+                className="w-full h-150 object-cover"
+              />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-violet-600/20 to-purple-600/20 rounded-2xl transform rotate-6"></div>
-            <div className="absolute top-4 -right-4 w-24 h-24 bg-violet-600/10 rounded-full"></div>
-            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-600/10  rounded-full"></div>
+
+            {/* Elementos decorativos */}
+            <div className="absolute top-4 -right-12 w-24 h-24 bg-violet-600/10 rounded-full z-20"></div>
+            <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-600/10 rounded-full z-20"></div>
           </div>
 
         </div>

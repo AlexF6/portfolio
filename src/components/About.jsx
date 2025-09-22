@@ -20,42 +20,66 @@ import angular from "../assets/angular.svg"
 
 import { Briefcase } from "lucide-react";
 import { Globe } from "lucide-react";
+import { LibraryBig } from "lucide-react"
 
 const About = () => {
+
+  const experiences = [
+    {
+      year: "2025",
+      title: "Front-End",
+      company: "Abatech",
+      role: "Front-end Developer"
+    },
+  ];
+
   return(
     <section id="about" className="py-20 px-6 lg:px-12 bg-gray-950">
       <div className="max-w-7xl mx-auto w-full">
-        <div className="pl-2 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="pl-2 grid lg:grid-cols-2 gap-12">
 
           {/* firstColumn */}
-          <div className="w-auto h-auto sm:mx-auto lg:mx-0">
-            <h3 className="flex flex-row items-center gap-4 text-2xl font-semibold text-violet-400 mb-8">
-              <Briefcase/>
-              Experience
-            </h3>
-            <div className="space-y-4 pl-2">
-                <div className="relative pl-8 border-l-2 border-gray-700">
+          <div className="flex flex-col w-auto h-auto sm:mx-auto lg:mx-0 gap-6">
+            <div className="py-0 flex items-start justify-start">
+              <h3 className="flex flex-row items-center gap-4 text-2xl font-semibold text-violet-400">
+                <Briefcase/>
+                Experience
+              </h3>
+            </div>
+
+            <div className="pl-2">
+              {experiences.map((exp, index) => (
+                <div
+                  key={index}
+                  className="relative pl-8 border-l-2 border-gray-700"
+                >
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-violet-600 rounded-full"></div>
-                  <div className="text-violet-400 text-sm font-medium mb-1">2025</div>
-                  <h4 className="text-xl font-semibold mb-1">Front-End</h4>
-                  <div className="text-gray-400 mb-2">Abatech</div>
-                  <p className="text-gray-300">Front-end Developer</p>
+                  <div className="text-violet-400 text-sm font-medium mb-1">
+                    {exp.year}
+                  </div>
+                  <h4 className="text-xl font-semibold mb-1">{exp.title}</h4>
+                  <div className="text-gray-400 mb-2">{exp.company}</div>
+                  <p className="text-gray-300">{exp.role}</p>
                 </div>
+              ))}
+            </div>
+
+            <div>
+              <h3 className="flex flex-row items-center gap-4 text-2xl font-semibold text-violet-400">
+                <LibraryBig/>
+                Education
+              </h3>
+            </div>
+
+            <div className="pl-2">
                 <div className="relative pl-8 border-l-2 border-gray-700">
                   <div className="absolute -left-2 top-0 w-4 h-4 bg-violet-600 rounded-full"></div>
-                  <div className="text-violet-400 text-sm font-medium mb-1">2025</div>
-                  <h4 className="text-xl font-semibold mb-1">Front-End</h4>
-                  <div className="text-gray-400 mb-2">Abatech</div>
-                  <p className="text-gray-300">Front-end Developer</p>
-                </div>
-                <div className="relative pl-8 border-l-2 border-gray-700">
-                  <div className="absolute -left-2 top-0 w-4 h-4 bg-violet-600 rounded-full"></div>
-                  <div className="text-violet-400 text-sm font-medium mb-1">2025</div>
-                  <h4 className="text-xl font-semibold mb-1">Front-End</h4>
-                  <div className="text-gray-400 mb-2">Abatech</div>
-                  <p className="text-gray-300">Front-end Developer</p>
+                  <div className="text-violet-400 text-sm font-medium mb-1">2022 - 202X</div>
+                  <h4 className="text-xl font-semibold mb-1">Technology in Software Development</h4>
+                  <p className="text-gray-300">Instituto Tecnológico Metropolitano de Medellín</p>
                 </div>
             </div>
+
           </div>
           
           {/* Second Column */}
