@@ -47,7 +47,7 @@ const About = () => {
               </h3>
             </div>
 
-            <div className="pl-2">
+            <div className="pl-2 space-y-6">
               {experiences.map((exp, index) => (
                 <div
                   key={index}
@@ -64,7 +64,7 @@ const About = () => {
               ))}
             </div>
 
-            <div>
+            <div className="pt-10 flex items-start justify-start">
               <h3 className="flex flex-row items-center gap-4 text-2xl font-semibold text-violet-400">
                 <LibraryBig/>
                 Education
@@ -88,7 +88,7 @@ const About = () => {
               <Globe/>
               Technologies
             </h3>
-            <div className="grid sm:grid-cols-2  space-y-4">
+            <div className="grid sm:grid-cols-2 space-y-4">
               <div>
                 <h3 className="flex justify-center text-xl font-semibold text-violet-300">
                   Frontend
