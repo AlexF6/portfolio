@@ -4,8 +4,7 @@ import { Download } from "lucide-react";
 import reactImg from "../assets/react.svg"
 import linkedin from "../assets/linkedin.svg"
 import { MailIcon } from "lucide-react";
-import blob from "../assets/blob.svg"
-import photo from "../assets/photo2.png"
+import photo from "../assets/photo.webp"
 
 
 
@@ -42,7 +41,7 @@ const Hero = () => {
 
               <Button size="lg" className="flex cursor-pointer items-center gap-2 bg-violet-600 hover:bg-purple-700 transition-all duration-300">
                 <img src={linkedin} className="w-[15px]" alt="" />
-                <a href="https://co.linkedin.com/in/alexsander-gonz%C3%A1lez-farrayans-149a18267?trk=people-guest_people_search-card">
+                <a href="https://co.linkedin.com/in/alexsander-gonz%C3%A1lez-farrayans-149a18267?trk=people-guest_people_search-card" target="_blank">
                   <p>
                     LinkedIn
                   </p>

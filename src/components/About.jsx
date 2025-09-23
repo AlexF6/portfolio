@@ -89,51 +89,99 @@ const About = () => {
               Technologies
             </h3>
             <div className="grid sm:grid-cols-2  space-y-4">
-              {/* first */}
               <div>
                 <h3 className="flex justify-center text-xl font-semibold text-violet-300">
                   Frontend
                 </h3>
                 <br/>
                 <div className="flex justify-center gap-5">
-                  <img src={htmlIcon} className="w-11 h-11" alt="htmlIcon" />
-                  <img src={cssIcon} className="w-11 h-11" alt="cssIcon" /> 
-                  <img src={jsIcon} className="w-11 h-11" alt="jsIcon" /> 
+                  <div className="flex flex-col items-center">
+                    <img src={htmlIcon} className="w-11 h-11" alt="htmlIcon" />
+                    <p className="text-gray-300 font-medium">HTML</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={cssIcon} className="w-11 h-11" alt="cssIcon" />
+                    <p className="text-gray-300 font-medium">CSS</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={jsIcon} className="w-11 h-11" alt="jsIcon" />
+                    <p className="text-gray-300 font-medium">JavaScript</p>
+                  </div>
                 </div>
+
                 <div className="flex justify-center gap-5 mt-5">
-                  <img src={reactIcon} className="w-11 h-11" alt="" />
-                  <img src={tailwindIcon} className="w-11 h-11" alt="" />
+                  <div className="flex flex-col items-center">
+                    <img src={reactIcon} className="w-11 h-11" alt="reactIcon" />
+                    <p className="text-gray-300 font-medium">React</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={tailwindIcon} className="w-11 h-11" alt="tailwindIcon" />
+                    <p className="text-gray-300 font-medium">Tailwind</p>
+                  </div>
                 </div>
               </div>
               {/* second */}
               <div>
                 <h3 className="flex justify-center text-xl font-semibold text-violet-300">
-                  Backend 
+                  Backend
                 </h3>  
-                <div className="flex items-center justify-center gap-5 mt-5">
-                  <img src={railsIcon} className="w-11 h-11" alt="" />
-                  {/* <img src={nodeIcon} className="w-11 h-11" alt="" /> */}
-                  <img src={mysqlIcon} className="w-11 h-11" alt="" />
-                  <img src={postgreIcon} className="w-11 h-11" alt="" />
 
+                <div className="flex items-center justify-center gap-5 mt-5">
+                  <div className="flex flex-col items-center">
+                    <img src={railsIcon} className="w-11 h-11" alt="railsIcon" />
+                    <p className="text-gray-300 font-medium">Rails</p>
+                  </div>
+
+                  {/* Si quieres usar Node.js, descomenta */}
+                  {/* 
+                  <div className="flex flex-col items-center">
+                    <img src={nodeIcon} className="w-11 h-11" alt="nodeIcon" />
+                    <p className="text-gray-300 font-medium">Node.js</p>
+                  </div>
+                  */}
+
+                  <div className="flex flex-col items-center">
+                    <img src={mysqlIcon} className="w-11 h-11" alt="mysqlIcon" />
+                    <p className="text-gray-300 font-medium">MySQL</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={postgreIcon} className="w-11 h-11" alt="postgreIcon" />
+                    <p className="text-gray-300 font-medium">PostgreSQL</p>
+                  </div>
                 </div>             
-                <div className="flex items-center justify-center gap-5 mt-5">
-                </div>
-
               </div>
               {/* third */}
               <div>
                 <h3 className="flex justify-center text-xl font-semibold text-violet-300">
                   Learning                
                 </h3>
-                <div className="flex items-center justify-center gap-5 mt-5">
-                  <img src={dockerIcon} className="w-11 h-11" alt="" />
-                  <img src={angular} className="w-11 h-11" alt="" />
-                  <img src={python} className="w-11 h-11" alt="" />
 
-                </div>
                 <div className="flex items-center justify-center gap-5 mt-5">
-                  <img src={typeScriptIcon} className="w-11 h-11" alt="" />
+                  <div className="flex flex-col items-center">
+                    <img src={dockerIcon} className="w-11 h-11" alt="dockerIcon" />
+                    <p className="text-gray-300 font-medium">Docker</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={angular} className="w-11 h-11" alt="angularIcon" />
+                    <p className="text-gray-300 font-medium">Angular</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={python} className="w-11 h-11" alt="pythonIcon" />
+                    <p className="text-gray-300 font-medium">Python</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-center gap-5 mt-5">
+                  <div className="flex flex-col items-center">
+                    <img src={typeScriptIcon} className="w-11 h-11" alt="tsIcon" />
+                    <p className="text-gray-300 font-medium">TypeScript</p>
+                  </div>
                 </div>
               </div>
               {/* fourth */}
@@ -141,13 +189,29 @@ const About = () => {
                 <h3 className="flex justify-center text-xl font-semibold text-violet-300">
                   Tools
                 </h3>
+
                 <div className="flex items-center justify-center gap-5 mt-5">
-                  <img src={gitIcon} className="w-11 h-11" alt="" />
-                  <img src={githubIcon} className="w-11 h-11" alt="" />
-                  <img src={vsIcon} className="w-11 h-11" alt="" />
+                  <div className="flex flex-col items-center">
+                    <img src={gitIcon} className="w-11 h-11" alt="gitIcon" />
+                    <p className="text-gray-300 font-medium">Git</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={githubIcon} className="w-11 h-11" alt="githubIcon" />
+                    <p className="text-gray-300 font-medium">GitHub</p>
+                  </div>
+
+                  <div className="flex flex-col items-center">
+                    <img src={vsIcon} className="w-11 h-11" alt="vsIcon" />
+                    <p className="text-gray-300 font-medium">VS Code</p>
+                  </div>
                 </div>
+
                 <div className="flex items-center justify-center gap-5 mt-5">
-                  <img src={npmIcon} className="w-11 h-11" alt="" />
+                  <div className="flex flex-col items-center">
+                    <img src={npmIcon} className="w-11 h-11" alt="npmIcon" />
+                    <p className="text-gray-300 font-medium">npm</p>
+                  </div>
                 </div>
               </div>
             </div>
